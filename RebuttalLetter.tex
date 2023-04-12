@@ -1,0 +1,164 @@
+\documentclass{article}
+
+\usepackage{RebuttalLetter}
+
+% command \hl
+\usepackage{color,soul}
+\usepackage{siunitx} % conflict with pkg physics: \vb
+\usepackage{physics}
+\usepackage{upgreek}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{amssymb}
+
+\usepackage[
+    bookmarks=false,         % show bookmarks bar?
+    colorlinks=true,    % false: boxed links; true: colored links
+ ]{hyperref}
+
+\newcommand{\rev}[1]{{\leavevmode\color{red}#1}}
+\renewcommand{\theequation}{R\arabic{equation}}
+\DeclareMathOperator{\sinc}{sinc}
+
+
+\title{\textbf{Rebuttal Letter for the Manuscript JASA-00xxx entitled ``Your Manuscript Title Here''}}
+
+\onehalfspacing 
+
+\begin{document}
+
+
+\maketitle
+
+% enable Page 1 of xx at the first page
+\thispagestyle{firststyle}
+
+\noindent 
+Dear Editor,
+% \medskip
+
+Thank you for handling the review process of our manuscript. 
+We are sincerely grateful for the comments and suggestions from you and the reviewers, which have helped us
+to improve the quality of the manuscript. We have revised the manuscript carefully according to
+the comments and suggestions, and the main changes are summarized below:
+\begin{enumerate}
+    \item Change 1.
+    \item Change 2.
+    \item Change 3.
+    \item Change 4.
+\end{enumerate}
+
+The changes are marked in red in the revised manuscript. 
+The detailed responses are appended below.
+We sincerely appreciate your further consideration of the revised manuscript.
+
+
+\medskip
+\noindent
+Best regards,
+
+\medskip
+\noindent
+Author 1, Author 2, and Author 3
+
+\newpage
+\section{Comments from Reviewer 1}
+
+
+\subsection{General comments}
+\lipsum[1]
+
+\lipsum[2]
+
+
+\subsubsection*{Responses}
+Thank you for your comments and recommendation.
+
+\subsection{Comment 1}
+\lipsum[3]
+
+\subsubsection*{Responses}
+We added Sec.~IV.C entitled ``Computational efficiency'' in the revised manuscript to compare the calculation time of convolution models and the exact solution.
+
+\subsubsection*{Changes}
+\begin{itemize}
+    \item At line 405, 
+        Sec.~IV.C entitled ``Computational efficiency'' is added.
+\end{itemize}
+
+\subsection{Comment 2}
+\lipsum[4]
+
+\subsubsection*{Responses}
+Thank you for pointing out this typo. 
+We added $k_i$ in Eq.~(4) in the revised manuscript.
+
+\subsubsection*{Changes}
+Equation~(4) 
+\begin{equation}
+    p_i(\bm\uprho_\mathrm{v}) = 
+    \frac{p_0}{2}
+    \int_{-a}^a H_0(k_i\abs{\bm\uprho_\mathrm{v}-\bm\uprho_\mathrm{s}})
+    u_i(\bm\uprho_\mathrm{s}) 
+    \dd y_\mathrm{s}
+    \tag{4}
+\end{equation}
+is revised as
+\begin{equation}
+    p_i(\bm\uprho_\mathrm{v}) = 
+    \frac{p_0}{2}
+    \int_{-a}^a H_0(k_i\abs{\bm\uprho_\mathrm{v}-\bm\uprho_\mathrm{s}})
+    u_i(\bm\uprho_\mathrm{s}) 
+    \rev{k_i}
+    \dd y_\mathrm{s}
+    \tag{4}
+\end{equation}
+
+
+
+\subsection{Comment 3}
+\lipsum[5]
+
+\subsubsection*{Responses}
+We have added descriptions for undefined symbols in the revised manuscript.
+
+\subsubsection*{Changes}
+\begin{itemize}
+    \item 
+        Line 137, the descriptions 
+        ``\rev{$
+            \rho_\mathrm{s,<} = \min(\rho, \rho_\mathrm{s}), 
+            \rho_\mathrm{s,>} = \max(\rho, \rho_\mathrm{s})
+        $}''
+        is added below Eq.~(8) in the revised manuscript.
+
+    \item 
+        Line 160, the descriptions
+        ``\rev{$
+            r_\mathrm{s,<} = \min(r,r_\mathrm{s}),
+            r_\mathrm{s,>} = \max(r,r_\mathrm{s})
+        $}''
+        is added below Eq.~(16) in the revised manuscript.
+\end{itemize}
+
+
+
+\newpage
+\section{Comments from Reviewer 2}
+
+\subsection{General Comments}
+\lipsum[6]
+
+\lipsum[7]
+
+\subsubsection*{Responses}
+Thank you for the advice. 
+
+\subsubsection*{Changes}
+\begin{itemize}
+    \item Line 123, change 1.
+    \item Line 234, change 2.
+\end{itemize}
+
+\end{document}

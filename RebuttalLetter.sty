@@ -1,0 +1,20 @@
+\usepackage[a4paper, left=2.54cm, right=2.54cm, top=2.54cm, bottom=2.54cm]{geometry}
+
+%% Set the footer
+% see https://tex.stackexchange.com/questions/227/how-can-i-add-page-of-on-my-document
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % clear existing header/footer entries
+\renewcommand{\headrule}{}
+\fancyfoot[C]{Page {\thepage} of \pageref*{LastPage}}
+% note that 
+%   \thispagestyle{firststyle}
+% must be used below \maketitle
+\fancypagestyle{firststyle} 
+{
+    \fancyhf{}
+    \fancyfoot[C]{Page {\thepage} of \pageref*{LastPage}}
+}
+
+\usepackage{lipsum}
