@@ -18,3 +18,59 @@
 }
 
 \usepackage{lipsum}
+
+
+%% table
+\usepackage{booktabs}
+\usepackage{multirow}
+
+% ============Page setup============
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks      =   true,
+    bookmarks       =   true,
+    bookmarksopen   =   true,
+    % bookmarksdepth  =   2,
+    pdfstartview    =   Fit,
+    pdftitle        =   {Rebuttal Letter},
+    pdfauthor       =   {Jiaxin Zhong}
+}
+
+\usepackage{physics}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+
+
+% command \hl
+\usepackage{color,soul}
+\usepackage{siunitx} % conflict with pkg physics: \vb
+\usepackage{physics}
+\usepackage{upgreek}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{amssymb}
+
+
+\newcommand{\rev}[1]{{\leavevmode\color{red}#1}}
+\renewcommand{\thefigure}{R\arabic{figure}}
+\renewcommand{\theequation}{R\arabic{equation}}
+\DeclareMathOperator{\sinc}{sinc}
+
+\renewcommand{\thetable}{R\arabic{table}}
+\renewcommand{\thefigure}{R\arabic{figure}}
+\renewcommand{\theequation}{R\arabic{equation}}
+
+\usepackage[T1]{fontenc}
+% \usepackage{mlmodern}
+\usepackage{tgtermes}
+
+\usepackage{caption}
+\captionsetup[table]{skip=10pt}
+
+\usepackage{tcolorbox}
+\newtcolorbox{commentbox}{
+    colback=cyan!5!white,
+    colframe=cyan!75!black,
+    before upper={\parindent15pt\noindent}
+}
