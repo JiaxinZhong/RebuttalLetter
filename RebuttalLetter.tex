@@ -14,15 +14,27 @@
 ]{biblatex}
 \addbibresource{biblatex.bib}
 
-\title{\textbf{\LARGE Rebuttal Letter and Responses to Reviewers' Comments}
-\\[-.5em]
-\textit{\large Re: Manuscript ID 0000-0000-0000}
-\\[-.5em]
-\textbf{\large ``Your Manuscript Title Here''}
-\vspace{-2em}
+\title{
+    \vspace{2em}
+    \textbf{\Large Rebuttal Letter and Responses to Reviewers' Comments}
+    \\[-.5em]
+    \textit{\large Re: Manuscript ID 0000-0000-0000}
+    \\[-.5em]
+    \textbf{\large ``Your Manuscript Title Here''}
+    \vspace{-4em}
 }
 
 \onehalfspacing 
+
+
+% Remove it if you do not want watermark
+\usepackage[angle=0, scale=.5, firstpageonly=true]{draftwatermark}
+\SetWatermarkText{
+    \tikz{\node[opacity=0.06]{\includegraphics{img/penn-state-shield.jpg}}}
+}
+
+
+
 
 \begin{document}
 
@@ -38,7 +50,7 @@
 
 \noindent
 Dear Editor,
-\medskip
+% \medskip
 
 Thank you for handling the review process of our manuscript.
 We are sincerely grateful for the comments and suggestions from you and the reviewers, which have helped us
@@ -56,13 +68,15 @@ The detailed responses to reviewers' comments are appended below.
 We sincerely appreciate your further consideration of the revised manuscript.
 
 
-\medskip
-\noindent
+\lipsum[1-4]
+
 Best regards,
 
-\medskip
-\noindent
-Author 1, Author 2, and Author 3
+% signature
+\includegraphics[scale=0.8]{img/Signature-EN1-20181030.png}
+\vspace{-1em}
+
+Dr. Jia-Xin Zhong
 
 \newpage
 \section{Comments from Editor}
@@ -71,7 +85,7 @@ Author 1, Author 2, and Author 3
 \end{commentbox}
 
 \subsubsection*{Responses}
-\lipsum[2]
+\lipsum[2-3]
 
 \subsubsection*{Changes}
 \lipsum[3]
@@ -82,7 +96,7 @@ Author 1, Author 2, and Author 3
 
 \subsection{General comments}
 \begin{commentbox}
-Here are the general comments from Reviewer 1.
+    Here are the general comments from Reviewer 1.
 \end{commentbox}
 
 
@@ -101,7 +115,7 @@ Figure~\ref{fig:ex} is an example image \cite{Zhong2020SphericalExpansionAudio}.
 
 \subsection{Major comment 1}
 \begin{commentbox}
-\lipsum[3]
+    \lipsum[3]
 \end{commentbox}
 
 \subsubsection*{Responses}
@@ -148,7 +162,7 @@ Equation~(\ref{eq:ex}) is the expression.
 
 \subsection{Major comment 2}
 \begin{commentbox}
-\lipsum[4]
+    \lipsum[4]
 \end{commentbox}
 
 \subsubsection*{Responses}
@@ -179,7 +193,7 @@ is revised as
 
 \subsection{Minor comments}
 \begin{commentbox}
-\lipsum[5]
+    \lipsum[5]
 \end{commentbox}
 
 \subsubsection*{Responses}
@@ -211,9 +225,9 @@ We have added descriptions for undefined symbols in the revised manuscript.
 
 \subsection{General Comments}
 \begin{commentbox}
-\lipsum[6]
+    \lipsum[6]
 
-\lipsum[7]
+    \lipsum[7]
 \end{commentbox}
 
 \subsubsection*{Responses}
