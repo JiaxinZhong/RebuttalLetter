@@ -3,7 +3,13 @@
 
 \NeedsTeXFormat{LaTeX2e}
 
-\usepackage[a4paper, left=2.54cm, right=2.54cm, top=2.54cm, bottom=2.54cm]{geometry}
+\usepackage[
+    a4paper,
+    left = 2.54cm,
+    right = 2.54cm, 
+    top=2.54cm, 
+    bottom=2.54cm
+]{geometry}
 
 
 \usepackage{xcolor}
@@ -27,11 +33,12 @@
     \fancyhf{}
     \fancyhead[L]{
         \begin{tabular}{l|l}
-            \parbox{.55\textwidth}{
-                \includegraphics[width=0.45\textwidth]{img/PSU_logo.png}
+            \hspace{-1.3em}
+            \parbox{.58\textwidth}{
+                \includegraphics[width=0.4\textwidth]{img/PSU_logo.png}
             }
              &
-            \parbox{.45\textwidth}{
+            \parbox{.42\textwidth}{
             {\color{MainColor} \faMapMarker} Graduate Program in Acoustics \\
             \hphantom{\faMapMarker} College of Engineering                 \\
             \hphantom{\faMapMarker} The Pennsylvania State University      \\
