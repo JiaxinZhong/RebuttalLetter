@@ -1,6 +1,4 @@
-\documentclass[12pt]{article}
-
-\usepackage{RebuttalLetter}
+\documentclass{RebuttalLetter}
 
 % use biblatex to manage references
 \usepackage[
@@ -14,6 +12,7 @@
 ]{biblatex}
 \addbibresource{biblatex.bib}
 
+
 \title{
     \vspace{2em}
     \textbf{\Large Rebuttal Letter and Responses to Reviewers' Comments}
@@ -24,16 +23,15 @@
     \vspace{-4em}
 }
 
-\onehalfspacing 
-
-
-% Remove it if you do not want watermark
-\usepackage[angle=0, scale=.5, firstpageonly=true]{draftwatermark}
-\SetWatermarkText{
-    \tikz{\node[opacity=0.06]{\includegraphics{img/penn-state-shield.jpg}}}
+%% set water mark
+% water mark file
+\newcommand{\WatermarkImage}{img/penn-state-shield.jpg}
+% % the pages where 
+\newcommand{\WatermarkPages}{1-2}
+\usepackage{xwatermark}
+\newwatermark[pages=\WatermarkPages, scale=.5, xpos=0, ypos=0]{
+    \tikz{\node[opacity=0.08]{\includegraphics{\WatermarkImage}}}
 }
-
-
 
 
 \begin{document}
