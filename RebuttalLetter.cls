@@ -34,19 +34,26 @@
     \fancyhead[L]{
         \begin{tabular}{l|l}
             \hspace{-1.3em}
-            \parbox{.58\textwidth}{
+            \parbox{.5\textwidth}{
                 \includegraphics[width=0.4\textwidth]{img/PSU_logo.png}
             }
              &
-            \parbox{.42\textwidth}{
+            \parbox{.5\textwidth}{
             {\color{MainColor} \faMapMarker} Graduate Program in Acoustics \\
             \hphantom{\faMapMarker} College of Engineering                 \\
             \hphantom{\faMapMarker} The Pennsylvania State University      \\
+            %% below is for Jiaxin Zhong
             {\color{MainColor} \faEnvelope} 118 Research West              \\
             \hphantom{\faEnvelope} University Park, PA 16802               \\
             {\color{MainColor}\faPhone} (+1)814-699-0386                   \\
             {\color{MainColor}\faAt} Jiaxin.Zhong@psu.edu                  \\
             {\color{MainColor}\faGlobe} {\color{MainColor}\url{http://JiaxinZhong.com}}
+            %% below is for Yun Jing
+            % {\color{MainColor} \faEnvelope} 201 Applied Science Building              \\
+            % \hphantom{\faEnvelope} University Park, PA 16802               \\
+            % {\color{MainColor}\faPhone} (+1)814-867-1334                   \\
+            % {\color{MainColor}\faAt} yqj5201@psu.edu                \\
+            % {\color{MainColor}\faGlobe} {\color{MainColor}\url{https://sites.psu.edu/jinglab/}}
             }
         \end{tabular}
     }
